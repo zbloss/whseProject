@@ -13,9 +13,16 @@ var exec = require('child_process').exec;
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
-
+var child = exec("python manage.py runserver", function (error, stdout, stderr) {
+  sys.print('stdout: ' + stdout);
+  sys.print('stderr: ' + stderr);
+  if (error !== null) {
+    console.log('exec error: ' + error);
+  }
+});
 
 function createWindow () {
+  /*
   var child = exec("python manage.py runserver", function (error, stdout, stderr) {
     sys.print('stdout: ' + stdout);
     sys.print('stderr: ' + stderr);
@@ -23,12 +30,9 @@ function createWindow () {
       console.log('exec error: ' + error);
     }
   });
-
+  */
   // Create the browser window.
   mainWindow = new BrowserWindow({width: 800, height: 600})
-
-  // starting django localserver
-
 
   mainWindow.loadURL('http://localhost:8000');
 
