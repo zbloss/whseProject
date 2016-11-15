@@ -1,0 +1,22 @@
+<!DOCTYPE HTML5>
+<html>
+{% load static %}
+<head>
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/bootstrap-theme.css' %}" />
+
+  <title>{% block title %}{% endblock title %}</title>
+
+</head>
+<body>
+
+  {% block content %}
+
+  {% endblock content %}
+
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+
+</body>
+
+</html>
