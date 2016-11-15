@@ -8,6 +8,8 @@ const path = require('path');
 const url = require('url');
 var sys = require('util');
 var exec = require('child_process').exec;
+var jquery = require('jquery');
+var jQuery = jquery;
 var child;
 
 let mainWindow
@@ -26,9 +28,9 @@ function createWindow () {
   mainWindow = new BrowserWindow({width: 1400, height: 900})
 
   mainWindow.loadURL('file://' + (__dirname) + '/home/templates/index.html');
-
+  //mainWindow.loadURL('file://' + (__dirname) + '/index.js');
   // Open the DevTools.
-  //mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {

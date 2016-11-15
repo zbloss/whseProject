@@ -18,6 +18,12 @@
     "electron": "^1.4.6",
     "child-process": "^1.0.2",
     "util": "*",
-    "electron-reload": "*"
+    "electron-reload": "*",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "babel": "^6.5.2",
+    "jsx": "^0.9.89",
+    "jquery": "3.1.1"
+
   }
 }
