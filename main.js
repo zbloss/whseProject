@@ -16,6 +16,7 @@ let mainWindow
 
 function createWindow () {
 
+  // this starts the django server
   child = exec("python manage.py runserver", function (error, stdout, stderr) {
     sys.print('stdout: ' + stdout);
     sys.print('stderr: ' + stderr);

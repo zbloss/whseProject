@@ -8,6 +8,13 @@
 	height: 100vh;
 }
 
+body.initialPage {
+  background: url(../img/whseLogo.jpg) no-repeat center center fixed;
+  opacity: .2;
+
+}
+
+
 .full-bg-img {
 	color: #fff;
 }
