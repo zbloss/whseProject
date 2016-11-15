@@ -17,8 +17,9 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.4.1",
+    "electron": "^1.4.6",
     "child-process": "^1.0.2",
-    "util": "^2.0.1"
+    "util": "^2.0.1",
+    "electron-reload": "*"
   }
 }
