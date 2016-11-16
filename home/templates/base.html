@@ -33,34 +33,20 @@
                 <!--Collapse content-->
                 <div class="collapse navbar-toggleable-xs" id="collapseEx">
                     <!--Navbar Brand-->
-                    <a class="navbar-brand" href="#" target="_blank">The WHSE, LLC.</a>
+                    <a class="navbar-brand" href="/">The WHSE, LLC.</a>
                     <!--Links-->
                     <ul class="nav navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#!">The WHSE, LLC. <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/incoming/">Incoming<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#!">Incoming</a>
+                            <a class="nav-link" href="/outgoing/">Outgoing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#!">Outgoing</a>
+                            <a class="nav-link" href="#!">Generate Reports</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#!">Reports</a>
-                        </li>
-
-                    </ul>
-
-                    <!--Navbar icons-->
-                    <ul class="nav navbar-nav nav-flex-icons">
-                        <li class="nav-item">
-                            <a class="nav-link"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"><i class="fa fa-instagram"></i></a>
+                            <a class="nav-link" href="/admin/">Admin</a>
                         </li>
                     </ul>
 
@@ -75,43 +61,10 @@
     </header>
   </div>
 
-    <!--/Navigation & Intro-->
+      {% block content %}
 
-    <!--Mask-->
-    <div class="view hm-black-light">
-        <div class="flex-center">
-            <ul>
-                <li>
-                    <h1 class="h1-responsive wow fadeInUp title">Login</h1></li>
-                <li>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="md-form">
-                                <input type="text" id="name" class="form-control">
-                                <label for="name">Username</label>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="md-form">
-                                <input type="text" id="password" class="form-control validate">
-                                <label for="password">Password</label>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="md-form">
-                                <button class="btn btn-lg btn-danger">Order</button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="payment">
-                    <i class="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
-                    <i class="fa fa-cc-mastercard fa-2x" aria-hidden="true"></i>
-                    <i class="fa fa-money fa-2x" aria-hidden="true"></i>
-                </li>
-            </ul>
-        </div>
-    </div>
+      {% endblock %}
+
     <!--/.Mask-->
 
     <script>

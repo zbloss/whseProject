@@ -1,20 +1,25 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}this is my title{% endblock title %}
+{% block title %}Main{% endblock title %}
 
 {% block content %}
-
-<div class="container-fluid">
+<div class="container" style="text-align: center;">
   <div class="row">
-    <div class="col-sm-6">
-      <h1>Col 1</h1>
-    </div>
-    <div class="col-sm-6">
-      <h1>Col 2</h1>
+    <br /><br /><br /><br />
+    <div class="col-sm-12">
+      <h1>Welcome</h1>
     </div>
   </div>
 </div>
 
-<h1>Hello world</h1>
+<!--Mask-->
+<div class="view hm-black-light">
+    <div class="align-items: center">
+        <hr />
+        <div class="row">
+          <img src="{% static 'img/whseLogo.jpg' %}" style="height: 75%;" class="img-responsive" st />
+        </div>
+    </div>
+</div>
 
 {% endblock content %}
