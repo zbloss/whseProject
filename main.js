@@ -29,14 +29,16 @@ function createWindow () {
   mainWindow = new BrowserWindow({width: 1400, height: 900})
 
   mainWindow.loadURL('file://' + (__dirname) + '/home/templates/index.html');
-  //mainWindow.loadURL('file://' + (__dirname) + '/index.js');
+
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
     mainWindow = null
   })
+  mainWindow.setMenu(null)
+
 }
 
 // This method will be called when Electron has finished
