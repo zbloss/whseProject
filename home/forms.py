@@ -5,7 +5,7 @@ from home.models import Incoming, Container, Part
 class IncomingForm(ModelForm):
     class Meta:
         model = Incoming
-        fields = ['name', 'message']
+        fields = ['name', 'message', 'containerNumber']
 
 class ContainerForm(ModelForm):
     class Meta:

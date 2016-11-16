@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^outgoing/$', views.outgoing, name="outgoing"),
     url(r'^outgoing/othankyou/$', views.othankyou, name="outgoingThankYou"),
     url(r'^containers/$', views.containers, name="containers"),
+    url(r'^containers/thankyou/$', views.cthankyou, name="containersThankYou"),
 ]
