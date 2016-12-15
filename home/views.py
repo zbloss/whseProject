@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from home.forms import IncomingForm, ContainerForm, PartForm
+from home.forms import ContainerForm, PartForm
 from django.http import HttpResponseRedirect, HttpResponse
 
 
@@ -7,18 +7,8 @@ def home(request):
     return render(request, "home.html")
 
 def incoming(request):
-    if request.method == 'POST':
-        form = IncomingForm(request.POST)
-        if form.is_valid():
-            name = form.cleaned_data['name']
-            message = form.cleaned_data['message']
-            containerNumber = form.cleaned_data['containerNumber']
-            instance = form.save(commit=False)
-            instance.save()
-            return HttpResponseRedirect('/incoming/ithankyou/')
-    else:
-        form = IncomingForm()
-    return render(request, 'incoming.html', {'form': form})
+
+    return render(request, 'incoming.html')
 
 def ithankyou(request):
     return render(request, 'ithankyou.html')

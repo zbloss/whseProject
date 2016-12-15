@@ -1,0 +1,27 @@
+{
+  "name": "whseProject",
+  "version": "1.0.0",
+  "description": "First attempt at databse application replacement designed for The WHSE, LLC.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/zbloss/whseProject",
+  "keywords": [
+    "whse",
+    "whseProject",
+    "electron"
+  ],
+  "author": "Zachary Bloss",
+  "license": "",
+  "devDependencies": {
+    "electron": "^1.4.6",
+    "electron-prebuilt": "^1.4.6",
+    "electron-reload": "^1.0.3",
+    "child-process": "^1.0.2",
+    "util": "^0.10.3",
+    "electron-reload": "^1.0.3",
+    "jquery": "3.1.1"
+
+  }
+}

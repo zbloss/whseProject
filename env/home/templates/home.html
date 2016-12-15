@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Main{% endblock title %}
+
+{% block content %}
+<div class="container" style="text-align: center;">
+  <div class="row">
+    <br /><br /><br /><br />
+    <div class="col-sm-12">
+      <h1>Welcome</h1>
+    </div>
+  </div>
+</div>
+
+<!--Mask-->
+<div class="view hm-black-light">
+    <div class="align-items: center">
+        <hr />
+        <div class="row">
+          <center>
+            <img src="{% static 'img/whseLogo.jpg' %}" style="height: 75%;" class="img-responsive" />
+          </center>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
