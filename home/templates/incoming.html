@@ -7,15 +7,59 @@
   <div class="flex">
     <h1>Incoming</h1>
     <hr />
-    <h4>These are containers that are set to arrive on: </h4><p>
+    <h4>These are containers that are set to arrive on: </h4>
+      <p>
       ###Date selector
-    </p>
+
+      </p>
   </div>
 </div>
 <div class="flex">
   <div class="container">
     <div class="row">
-      
+        <table class="table">
+            <tr><td><strong>CONTAINER #</strong></td><td><strong>PART #</strong></td><td><strong>QTY</strong></td></tr>
+            {% for inbound in incomingContainers %}
+                {% if inbound.part1 != "" %}
+                <tr><td>{{ inbound.containerNumber }}</td><td>{{ inbound.part1 }}</td><td>{{ inbound.qty1 }}</td></tr>
+                {% endif %}
+                {% if inbound.part2 != "" %}
+                <tr><td> </td><td>{{ inbound.part2 }}</td><td>{{ inbound.qty2 }}</td></tr>
+                {% endif %}
+                {% if inbound.part3 != "" %}
+                <tr><td> </td><td>{{ inbound.part3 }}</td><td>{{ inbound.qty3 }}</td></tr>
+                {% endif %}
+                {% if inbound.part4 != "" %}
+                <tr><td> </td><td>{{ inbound.part4 }}</td><td>{{ inbound.qty4 }}</td></tr>
+                {% endif %}
+                {% if inbound.part5 != "" %}
+                <tr><td> </td><td>{{ inbound.part5 }}</td><td>{{ inbound.qty5 }}</td></tr>
+                {% endif %}
+                {% if inbound.part6 != "" %}
+                <tr><td> </td><td>{{ inbound.part6 }}</td><td>{{ inbound.qty6 }}</td></tr>
+                {% endif %}
+                {% if inbound.part6 != "" %}
+                <tr><td> </td><td>{{ inbound.part6 }}</td><td>{{ inbound.qty6 }}</td></tr>
+                {% endif %}
+                {% if inbound.part7 != "" %}
+                <tr><td> </td><td>{{ inbound.part7 }}</td><td>{{ inbound.qty7 }}</td></tr>
+                {% endif %}
+                {% if inbound.part8 != "" %}
+                <tr><td> </td><td>{{ inbound.part8 }}</td><td>{{ inbound.qty8 }}</td></tr>
+                {% endif %}
+                {% if inbound.part9 != "" %}
+                <tr><td> </td><td>{{ inbound.part9 }}</td><td>{{ inbound.qty9 }}</td></tr>
+                {% endif %}
+                {% if inbound.part10 != "" %}
+                <tr><td> </td><td>{{ inbound.part10 }}</td><td>{{ inbound.qty10 }}</td></tr>
+                {% endif %}
+                {% if inbound.part11 != "" %}
+                <tr><td> </td><td>{{ inbound.part11 }}</td><td>{{ inbound.qty11 }}</td></tr>
+                {% endif %}
+                <tr><td></td><td></td><td></td></tr>
+            {% endfor %}
+
+        </table>
     </div>
   </div>
 </div>
